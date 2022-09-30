@@ -6,12 +6,12 @@ var playNotification = require('./play-notification');
 
 const hash = {
   original: {
-    document1: '9dc41de314ac77b5f4b93bb055df9d8c',
-    document2: '346e5701dac6f763e9f1b3174d4ac486',
+    document1: '3291033c82d0723b67fbfca47d810d2e',
+    document2: 'da30e15b18e182269a8c84b8e90eb56b',
   },
   modified: {
-    document1: 'ffa0f36f229923c869a6a9144ee10a72',
-    document2: '65142974fc999d020ef4c2ce2a27f798',
+    document1: '82c8d3e853d6743c8b7dbb4e42c40e52',
+    document2: 'b9ffa79dabe4fba38dda8551c4ffbf2f',
   },
 };
 
@@ -42,7 +42,7 @@ function getFileInfo(file) {
 let file1Info = getFileInfo('./document1.txt');
 let fiel2Info = getFileInfo('./document2.txt');
 
-// console.log(actualDocument1hash, actualDocument2hash);
+console.log(file1Info.hash, fiel2Info.hash);
 
 if (
   hash.original.document1 !== file1Info.hash ||
